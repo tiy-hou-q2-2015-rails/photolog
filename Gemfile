@@ -41,7 +41,9 @@ gem 'carrierwave-aws'
 gem 'dotenv-rails'
 gem 'mini_magick'
 gem 'kaminari'
+gem 'simple_form', '3.1'
 gem 'acts_as_taggable_on'
+gem 'remotipart', '1.2.1'
 
 group :production do
   gem 'rails_12factor'

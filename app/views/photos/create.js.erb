@@ -1,0 +1,9 @@
+<% if @photo.errors.none? %>
+  // close modal
+  $("#our-super-cool-modal").modal("hide");
+  // re-render the photos
+  $("#photos").html("<%= j render partial: 'photos' %>");
+<% else %>
+  $("#our-super-cool-modal .modal-body").html("<%= j render partial: 'form' %>");
+
+<% end %>

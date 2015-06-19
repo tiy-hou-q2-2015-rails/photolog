@@ -1,0 +1,9 @@
+<div class="row">
+  <% @photos.each do |photo| %>
+    <div class="col-xs-6 col-md-2">
+      <%= link_to "#", class: "thumbnail" do %>
+        <%= image_tag photo.picture.url(:thumb) %>
+      <% end %>
+    </div>
+  <% end %>
+</div>

@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   root 'photos#index'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
+  post 'photos' => 'photos#create', as: :photos
+  get "photos/open_modal" => 'photos#open_modal', as: :open_new_photo_modal
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
